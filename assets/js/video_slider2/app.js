@@ -1,0 +1,6 @@
+$(function() {
+  $('#slider').rotateSlider({
+
+  });
+
+});

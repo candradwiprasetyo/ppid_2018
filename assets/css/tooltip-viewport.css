@@ -1,0 +1,42 @@
+.tooltip {
+  min-width: 250px;
+  max-width: 250px;
+}
+.tooltip .tooltip-inner {
+  padding: 10px;
+  min-width: 250px;
+  max-width: 250px;
+  text-align: center;
+}
+.container-viewport {
+  position: absolute;
+  top: 100px;
+  right: 250px;
+  left: 250px;
+  height: 300px;
+  background-color: #eee;
+}
+.btn-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.inputbox_white {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
