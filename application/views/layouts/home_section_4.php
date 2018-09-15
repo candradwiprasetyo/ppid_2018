@@ -11,7 +11,7 @@
             if ($key==0) {
           ?>
           
-          <div class="c-cover c-cover-medium">
+          <div class="c-cover c-cover-medium u-mrgn-bottom--20">
             <a href="<?= base_url().$this->library->get_url_news($row->ID, $row->TITLE); ?>">
               <img src="<?= base_url() ?>assets/images/article/perspektif.jpg">
             </a>
@@ -94,22 +94,11 @@
         </div>
       </div>
     </div>
-    <div class="row row-no-margin">
-      <div class="col-sm-6">
-        <div class="c-google-ads-bottom u-mrgn-bottom--20">
-          <a href="<?= base_url() ?>kalkulator"><img src="<?= $this->library->check_image('assets/images/banner/kalkulator.gif'); ?>"></a>
-        </div>
-      </div>
-      <div class="col-sm-6">
-        <div class="c-google-ads-bottom u-mrgn-bottom--20">
-          <a href="<?= base_url() ?>indikator"><img src="<?= $this->library->check_image('assets/images/banner/indikator.gif'); ?>"></a>
-        </div>
-      </div>
-    </div>
+    
 	</div>
   
   <div class="col-md-4 c-main-desktop">
-    <div class="u-bg-yellow u-pad" style="margin-top: -20px">
+    <div class="u-bg-white u-pad" style="margin-top: -20px">
       <div class="row row-no-margin">
         <div class="col-md-12 ">
           <div class="c-main-title c-main-title--orange">
@@ -128,7 +117,7 @@
                 <div class="item <?php if($key==0){ echo "active"; } ?>">
                   <div class="row row-no-margin">
                     <div class="col-md-12">
-                      <div class="c-cover c-cover-medium">
+                      <div class="c-cover c-cover-medium u-mrgn-bottom--20">
                         <a href="<?= Base_url(). 'fokus/'.$this->library->get_url_news($row->ID, $row->TITLE); ?>">
                           
                           <img src="<?= $this->library->get_image($analisis_img[0]->IMAGE, 1); ?>">

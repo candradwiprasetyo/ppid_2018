@@ -95,20 +95,7 @@
 
       </div>
     </div>
-    <!-- Google adsense -->
-    <div class="row row-no-margin" style="margin-left: 0px;">
-      <div class="col-md-12">
-            <!-- ads2news-728x90-homepage -->
-        <ins class="adsbygoogle"
-            style="display:inline-block;width:100%;height:90px"
-            data-ad-client="ca-pub-1783522418730843"
-            data-ad-slot="2494434158">
-        </ins>
-        <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        </script>
-      </div>
-    </div>
+   
 	</div>
 
 

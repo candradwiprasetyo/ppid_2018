@@ -347,15 +347,9 @@
 				<?php 
 				$c_header = $this->library->get_header_category(); 
 				foreach($c_header as $key => $row_c_header){ 
-				if ($key == 2) { ?>
-				
-				<?php
-				} else {
 				?>
 				<div class="line">&nbsp;</div>
-				<?php
-				}
-				?>
+				
 				<div class="item <?php if($this->router->class == $row_c_header->SEO){ echo "item--active"; }?>"><a><div onclick="menuHeader('<?= base_url().$row_c_header->SEO ?>')"><span class="fa fa-<?= $row_c_header->ICON?>"></span> <?= ucfirst(strtolower($row_c_header->CATEGORY_NAME)) ?></div></a>
 
 					<div class="item-content">	
@@ -365,7 +359,7 @@
 							<div class="col-xs-3">
 								<div class="row">
 									<div class="col-md-12">
-									<div class="u-bg-yellow" style="padding: 20px 0">
+									<div class="u-bg-white" style="padding: 20px 0">
 									<?php
 									$sc_header = $this->library->get_header_subcategory($row_c_header->ID); 
 									foreach($sc_header as $key => $row_sc_header){ 

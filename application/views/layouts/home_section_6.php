@@ -1,4 +1,4 @@
-<div class="row row-no-margin u-mrgn-bottom--20">
+<div class="row row-no-margin u-mrgn-bottom--20 u-mrgn-top--20">
 
   <div class="col-md-12">
     <div class="c-main-article u-mrgn-bottom--0"></div>

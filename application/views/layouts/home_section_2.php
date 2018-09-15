@@ -2,7 +2,7 @@
 <div class="row row-no-margin">
 	<div class="col-md-12">
 		<!-- Cover large -->
-		<div class="row row-no-margin u-mrgn-top--20">
+		<div class="row row-no-margin">
 			<div class="col-md-12">
         <div class="c-cover-slider-frame">
           <div id="carousel-example-main-slider" class="carousel slide" data-ride="carousel">

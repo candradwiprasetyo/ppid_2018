@@ -1,10 +1,15 @@
 <?php 
 	// Main banner	
-	// $this->load->view('layouts/home_section_1'); 
+	$this->load->view('layouts/home_section_marquee'); 
 	// cover slider
-	$this->load->view('layouts/home_section_2'); 
+	$this->load->view('layouts/home_section_2');
+	// profile
+	$this->load->view('layouts/home_section_profile');  
+	// icon
+	$this->load->view('layouts/home_section_icon');  
 	// berita terbaru, fokus
 	$this->load->view('layouts/home_section_3'); 
+
 	// perspektif, analisis, terpopuler
 	$this->load->view('layouts/home_section_4'); 
 ?>
