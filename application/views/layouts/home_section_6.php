@@ -1,8 +1,8 @@
-<div class="row row-no-margin">
+<div class="row row-no-margin u-mrgn-bottom--20">
 
   <div class="col-md-12">
     <div class="c-main-article u-mrgn-bottom--0"></div>
-    <div class="c-main-title c-main-title--center"><a href="<?= base_url() ?>berita/video">video</a></div>
+    <div class="c-main-title c-main-title--center"><a href="<?= base_url() ?>berita/video">Gallery</a></div>
   </div>
     
       
@@ -62,10 +62,10 @@
             </div>
             <div class="carousel-control-frame-topright">
               <a class="left carousel-control" href="#carousel-example-generic4" role="button" data-slide="prev">
-                <span class="fa fa-chevron-left"></span>
+                <span class="fa fa-caret-left"></span>
               </a>
               <a class="right carousel-control" href="#carousel-example-generic4" role="button" data-slide="next">
-                <span class="fa fa-chevron-right"></span>
+                <span class="fa fa-caret-right"></span>
               </a>
             </div>
           </div>

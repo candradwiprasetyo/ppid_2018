@@ -2,7 +2,7 @@
 <div class="row row-no-margin">
 	<div class="col-md-12">
 		<!-- Cover large -->
-		<div class="row row-no-margin">
+		<div class="row row-no-margin u-mrgn-top--20">
 			<div class="col-md-12">
         <div class="c-cover-slider-frame">
           <div id="carousel-example-main-slider" class="carousel slide" data-ride="carousel">
@@ -105,7 +105,7 @@
     </div>
 
 		<!-- Cover slider -->
-		<div class="c-cover-slider-frame c-main-desktop">
+		<div class="c-cover-slider-frame c-main-desktop u-mrgn-top--20 ">
 			<div id="carousel-example-cover-slider" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner carousel-inner-cover-slider" role="listbox">
             <?php foreach($headline_sub as $key => $row_headline){ 
@@ -155,10 +155,10 @@
         
 
         <a class="left carousel-control" href="#carousel-example-cover-slider" role="button" data-slide="prev">
-          <span class="fa fa-chevron-left"></span>
+          <span class="fa fa-caret-left"></span>
         </a>
         <a class="right carousel-control" href="#carousel-example-cover-slider" role="button" data-slide="next">
-          <span class="fa fa-chevron-right"></span>
+          <span class="fa fa-caret-right"></span>
         </a>
 
       

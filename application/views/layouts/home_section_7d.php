@@ -49,10 +49,10 @@
             </div>
             <div class="carousel-control-frame-topright">
               <a class="left carousel-control" href="#carousel-example-generic2" role="button" data-slide="prev">
-                <span class="fa fa-chevron-left"></span>
+                <span class="fa fa-caret-left"></span>
               </a>
               <a class="right carousel-control" href="#carousel-example-generic2" role="button" data-slide="next">
-                <span class="fa fa-chevron-right"></span>
+                <span class="fa fa-caret-right"></span>
               </a>
             </div>
           </div>
@@ -97,10 +97,10 @@
             </div>
             <div class="carousel-control-frame-topright">
               <a class="left carousel-control" href="#carousel-example-generic3" role="button" data-slide="prev">
-                <span class="fa fa-chevron-left"></span>
+                <span class="fa fa-caret-left"></span>
               </a>
               <a class="right carousel-control" href="#carousel-example-generic3" role="button" data-slide="next">
-                <span class="fa fa-chevron-right"></span>
+                <span class="fa fa-caret-right"></span>
               </a>
             </div>
           </div>
@@ -150,10 +150,10 @@
             </div>
             <div class="carousel-control-frame-topright">
               <a class="left carousel-control" href="#carousel-example-generic9" role="button" data-slide="prev">
-                <span class="fa fa-chevron-left"></span>
+                <span class="fa fa-caret-left"></span>
               </a>
               <a class="right carousel-control" href="#carousel-example-generic9" role="button" data-slide="next">
-                <span class="fa fa-chevron-right"></span>
+                <span class="fa fa-caret-right"></span>
               </a>
             </div>
           </div>

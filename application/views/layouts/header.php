@@ -198,7 +198,7 @@
   	</div>
 
   	<!-- Side Banner -->
-  	<?php
+  	<!-- <?php
   	if ($this->router->class == 'home') {
   	?>
   	<div class="c-left-side-banner u-banner-name">
@@ -217,7 +217,7 @@
   	</div>
   	<?php
   	}
-  	?>
+  	?> -->
 
   	<!-- header mobile -->
   	<div class="c-header-mobile" style="background: #eee">
@@ -341,14 +341,14 @@
   	<div class="c-menu">
   		<div class="container c-header-desktop">
   		<!-- Menu -->
-			
-				<a href="<?= base_url() ?>"><span class="fa fa-home home-button"></span></a>
-
+				<div class="item-beranda">
+				<a href="<?= base_url() ?>"><span class="fa fa-home"></span> Beranda</a>
+				</div>
 				<?php 
 				$c_header = $this->library->get_header_category(); 
 				foreach($c_header as $key => $row_c_header){ 
 				if ($key == 2) { ?>
-				<a href="<?= base_url() ?>fokus"><div class="item-exception">Fokus</div></a>
+				
 				<?php
 				} else {
 				?>
@@ -356,7 +356,7 @@
 				<?php
 				}
 				?>
-				<div class="item <?php if($this->router->class == $row_c_header->SEO){ echo "item--active"; }?>"><a><div onclick="menuHeader('<?= base_url().$row_c_header->SEO ?>')"><?= ucfirst(strtolower($row_c_header->CATEGORY_NAME)) ?></div></a>
+				<div class="item <?php if($this->router->class == $row_c_header->SEO){ echo "item--active"; }?>"><a><div onclick="menuHeader('<?= base_url().$row_c_header->SEO ?>')"><span class="fa fa-<?= $row_c_header->ICON?>"></span> <?= ucfirst(strtolower($row_c_header->CATEGORY_NAME)) ?></div></a>
 
 					<div class="item-content">	
 						<div class="container">
@@ -451,61 +451,9 @@
 				<?php
 				}
 				?>
-				<a href="<?= base_url() ?>review/reportase"><div class="item-exception">Reportase</div></a>
-				<div class="item-index"><div onclick="menuHeader('<?= base_url() ?>indeks/all')"><span class="fa fa-navicon"></span> Indeks</div>
+				<div class="item-kontak"><div><span class="fa fa-phone"></span> Kontak</div>
 
-					<div class="item-content">
-						<div class="container">
-						
-
-						<div class="row row-no-margin">
-							
-							<?php
-							$c_header = $this->library->get_header_category(); 
-							foreach($c_header as $key => $row_c_header){ 
-							if ($key == 0) {
-							?>
-							<div class="col-xs-6">	
-								<div class="row row-no-margin">  
-									<?php
-									} else if ($key == 3){ ?>
-									<div class="col-xs-6">	
-										
-									<div class="row row-no-margin">  
-									<?php } ?>
-									<div class="col-xs-4" style="padding: 0;">									
-									<div class="u-bg-yellow u-pad u-mrgn-bottom--20" style="padding-left: 0;">	
-									<div class="sub-item-title"><a href="<?= base_url().'indeks/'.$row_c_header->SEO ?>"><?= ucfirst(strtolower($row_c_header->CATEGORY_NAME)) ?></a></div>
-									</div>
-
-										<?php
-										$sc_header = $this->library->get_header_subcategory($row_c_header->ID);
-										foreach($sc_header as $key_sc => $row_sc_header) { 
-										?>
-										<div class="sub-item">
-											<?php if(($row_sc_header->ID >= 22 && $row_sc_header->ID <= 25)  || ($row_sc_header->ID >= 35 && $row_sc_header->ID <= 36)){ ?>
-											<a href="<?= $row_sc_header->URL; ?>"><?= $row_sc_header->SUBCATEGORY_NAME?></a>
-											<?php } else { ?>
-											<a href="<?= base_url().'indeks/'.$row_sc_header->SEO; ?>"><?= $row_sc_header->SUBCATEGORY_NAME?></a>
-											<?php } ?>
-										</div>
-										<?php } ?>
-										
-									</div>
-									<?php
-									if ($key == 5 || $key == 2) {
-									?>
-								</div>
-						      </div>
-						      <?php
-						    	}
-						    	}
-						      ?>
-						    </div>
-						</div>
-						</div>
-					</div>
-				</div>
+					
 			</div> 
 		</div>
 
