@@ -7,40 +7,9 @@
         <h1 class="c-main-title"><a href="<?= base_url() ?>berita">berita terkini</a></h1>
       </div>
       <div class="col-md-6"> 
-      <?php foreach($berita_sticky as $key => $row){
-        ?>
-
-       
-        <div class="c-cover c-cover-medium">
-          <a href="<?= base_url().$this->library->get_url_news($row->ID, $row->TITLE); ?>">
-            <?php
-            if ($row->SUBCATEGORY=='29' || $row->CATEGORY=='3') { ?>
-              <img src="<?= $this->library->get_image($row->IMAGE, 2); ?>">
-            <?php
-            } else {
-            ?>
-              <img src="<?= $this->library->get_image($row->IMAGE, 1); ?>">
-            <?php } ?>
-          </a>
-          <div class="c-cover-overlay">
-            <div class="date"><?= $this->library->format_date($row->PUBLISH_TIMESTAMP); ?></div>
-            <div class="tag"><?= $row->UPPERDECK; ?></div>
-            <div class="title title-medium"><a href="<?= base_url().$this->library->get_url_news($row->ID, $row->TITLE); ?>"><?= $row->TITLE; ?></a></div>
-          </div>
-        </div>
-        <div class="c-cover-border">
-          <div class="border-left"></div>
-          <div class="border-right"></div>
-        </div>
-       <!--  <div class="u-font-description u-mrgn-bottom--20">
-          <?= $this->library->get_taicing($row->TAICING); ?>
-        </div> -->
-
-        <div class="u-mrgn-bottom--20"></div>
-        <?php } 
-
+      <?php
          foreach($berita_terbaru_latest as $key => $row){ 
-            if ($row->STICKY != 1) {
+           
           ?>
         <div class="c-main-article">
             <div class="row">
@@ -59,11 +28,12 @@
                 <div class="date"><?= $this->library->format_date($row->PUBLISH_TIMESTAMP); ?></div>
                 <div class="tag"><?= $row->UPPERDECK; ?></div>
                 <div class="title"><a href="<?= base_url().$this->library->get_url_news($row->ID, $row->TITLE); ?>"><?= $row->TITLE; ?></a></div>
+                <div class="desc"><?= substr($row->CONTENT, 0, 100)."..."; ?></div>
               </div>
               <div class="u-clear"></div>
             </div>
           </div>
-        <?php } } ?>
+        <?php }  ?>
       </div>
       
       <div class="col-md-6">
@@ -86,6 +56,7 @@
                 <div class="date"><?= $this->library->format_date($row->PUBLISH_TIMESTAMP); ?></div>
                 <div class="tag"><?= $row->UPPERDECK; ?></div>
                 <div class="title"><a href="<?= base_url().$this->library->get_url_news($row->ID, $row->TITLE); ?>"><?= $row->TITLE; ?></a></div>
+                <div class="desc"><?= substr($row->CONTENT, 0, 100)."..."; ?></div>
               </div>
               <div class="u-clear"></div>
             </div>

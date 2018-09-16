@@ -13,6 +13,7 @@
           <div class="col-xs-10 u-pad--0">
             <div class="tag"><?= $row->UPPERDECK; ?></div>
             <div class="title"><a href="<?= base_url().$this->library->get_url_news($row->ID, $row->TITLE); ?>"><?= $row->TITLE; ?></a></div>
+            <div class="desc"><?= substr($row->CONTENT, 0, 100).'...'; ?></div>
           </div>
           <div class="u-clear"></div>
           

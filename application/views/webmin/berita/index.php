@@ -16,11 +16,11 @@
                   <th>Photo</th>
                   <th>Category</th>
                   <th>Publish Date</th>
-                  <th>Sticky</th>
+                  <!-- <th>Sticky</th> -->
                   <th>Status</th>
                   <th>Headline</th>
-                  <th>Editor's Pick</th>
-                  <th>Hit</th>
+                  <!-- <th>Editor's Pick</th> -->
+                  <!-- <th>Hit</th> --> 
                   <th style="width: 220px;">-</th>
                </tr>
             </thead>
@@ -52,9 +52,6 @@
                     { data: "5" },
                     { data: "6" , orderable: false},
                     { data: "7" , orderable: false},
-                    { data: "8" , orderable: false},
-                    { data: "9" },
-                    { data: "10" , orderable: false},
                 ],
                 "columnDefs": [
                 { 

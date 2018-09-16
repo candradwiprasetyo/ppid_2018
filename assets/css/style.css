@@ -229,6 +229,10 @@ label.error {
 	font-weight: bold;
 }
 
+.u-font-size--16 {
+	font-size: 16px;
+}
+
 .u-font-size--100 {
 	font-size: 100px;
 	line-height: 100px;
@@ -293,7 +297,7 @@ label.error {
 /*------------- Header -----------------*/
 .c-header {
 	/*background: linear-gradient(to right,#333 0%, #666 90%);*/
-	background: #355477;
+	background: #314d6d;
 	width: 100%;
 	z-index: 899;
 	min-height: 160px;
@@ -509,18 +513,18 @@ label.error {
 
 	margin-right: 30px;
 	font-size: 16px;
-	color: #08294C;
+	color: #6085ae;
 	margin-bottom: 10px;
 	margin-left: 20px;
 }
 
 .c-menu .item .item-content .sub-item a{
-	color: #08294C;
+	color: #6085ae;
 }
 
 .c-menu .item .item-content .sub-item a:hover {
 	text-decoration: none;
-	color: #da6268;
+	color: #6085ae;
 }
 
 .c-menu .item-kontak {
@@ -532,6 +536,11 @@ label.error {
 	cursor: pointer;
 	float: right;
 	background: #da6268;
+}
+
+.c-menu .item-kontak a{
+	color: #fff;
+	text-decoration: none;
 }
 
 .c-menu .item-kontak span{
@@ -800,6 +809,7 @@ label.error {
 	height: 0; 
 	overflow: hidden;
 	border-radius: 5px;
+	margin-bottom: 20px;
 }
 
 .c-cover--quiz {
@@ -825,10 +835,10 @@ label.error {
 }
 
 .c-cover:hover img {
-  /*-moz-transform: scale(1.1);
+  -moz-transform: scale(1.1);
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);*/
-  opacity: 0.5;
+  transform: scale(1.1);
+  /*opacity: 0.5;*/
 }
 
 .c-cover-large {
@@ -1026,6 +1036,12 @@ label.error {
 	width: 100%;
 	min-height: 160px;
 	padding-bottom: 0px;
+	color: #7b9dc1;
+	font-size: 12px;
+}
+
+.c-footer a{
+	color: #7b9dc1;
 }
 
 @media screen and (min-height: 769px) {
@@ -1160,7 +1176,10 @@ label.error {
 
 .c-main-photo:hover img {
   /*transform: scale(1.1);*/
-  opacity: 0.5;
+  /*opacity: 0.5;*/
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .c-main-photo--small-fixed {
@@ -1334,9 +1353,14 @@ h1 {
 }
 
 .c-main-article  .title {
-	font-size: 14px;
+	font-size: 16px;
 	font-weight: 600;
 	color: #08294C;
+}
+
+.c-main-article  .desc {
+	font-size: 12px;
+	color: #999;
 }
 
 .c-main-article .title-artikel-terkait {
@@ -1889,12 +1913,12 @@ img:hover {
 
 /*------------- modal dialog -----------------*/
 
-.c-main-banner-footer {
+.c-footer-bottom{
 	width: 100%;
-	position: fixed;
-	bottom: 0;
-	display: none;
 	text-align: center;
+	background: #314d6d;
+	color: #fff;
+	padding: 20px;
 	/*background: #eee;
 	line-height: 100px;
 	font-size: 20px;*/
@@ -2291,6 +2315,45 @@ img:hover {
 	border-bottom-right-radius: 5px;
 }
 
+.translation-links {
+    padding-top: 10px;
+    text-align: right;
+    position: absolute;
+    right: 20px;
+    top: 25px;
+    color: #fff;
+}
+
+.translation-links a {
+    margin-bottom: 10px;
+}
+
+.translation-links img {
+    filter: alpha(opacity=100);
+    -moz-opacity: 1.0;
+    opacity: 1.0;
+    border: 0;
+    cursor: pointer;
+    margin-right: 8px;
+    height: 20px;
+    width: 30px;
+    float: right;
+}
+
+.goog-te-combo {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    color: #7b9dc1;
+}
+.goog-te-gadget {
+	color: #7b9dc1 !important;
+}
+
+.goog-logo-link, .goog-logo-link:link, .goog-logo-link:visited, .goog-logo-link:hover, .goog-logo-link:active {
+	color: #7b9dc1 !important; 
+}
 /*------------- own container -----------------*/
 
 @media screen and (min-width: 1200px) and (max-width: 1550px) {
@@ -2429,11 +2492,11 @@ img:hover {
 		line-height: 32px;
 	}
 
-	.c-main-banner-footer {
+	/*.c-main-banner-footer {
 		display: inline;
 		z-index: 901;
 		background: linear-gradient(to right,#2B519A 0%, #08294C 90%);
-	}
+	}*/
 
 	.c-footer {
 		margin-bottom: 64px;

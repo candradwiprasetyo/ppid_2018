@@ -274,7 +274,7 @@
 		
 		
 		<div class="row">
-			<div class="col-md-12"><div class="c-main-title u-mrgn-top--0">Terpopuler</div></div>
+			<div class="col-md-12"><div class="c-main-title u-mrgn-top--0">Terbaru</div></div>
 			<div class="col-md-12">
 				<?php foreach($terpopuler as $key => $row){
           ?>

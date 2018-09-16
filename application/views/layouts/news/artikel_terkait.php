@@ -1,5 +1,5 @@
 <div>
-	<div class="c-main-title">artikel terkait</div>
+	<div class="c-main-title">Berita terkait</div>
 	<div class="row row-no-margin">
 	<?php
 	foreach($artikel_terkait as $key => $row){

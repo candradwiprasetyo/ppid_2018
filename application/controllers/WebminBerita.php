@@ -32,10 +32,10 @@ class WebminBerita extends MY_Controller {
             $row[] = $berita->CATEGORY_NAME." <br/> -".$berita->SUBCATEGORY_NAME;
             $row[] = isset($temp[0]) ? $date[2].'-'.$date[1].'-'.$date[0].'<br>'.$temp[1] : "";
 
-            if($berita->STICKY == 1)
-                $row[] = '<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>';
-            else 
-                $row[] = '<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>';
+            // if($berita->STICKY == 1)
+            //     $row[] = '<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>';
+            // else 
+            //     $row[] = '<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>';
 
             if($berita->STATUS == 1)
                 $row[] = '<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>';
@@ -47,12 +47,13 @@ class WebminBerita extends MY_Controller {
             else 
                 $row[] = '<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>';
 
-            if($berita->EDITORPICK == 1)
-                $row[] = '<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>';
-            else 
-                $row[] = '<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>';
+            // if($berita->EDITORPICK == 1)
+            //     $row[] = '<span class="glyphicon glyphicon-ok" aria-hidden="true"></span>';
+            // else 
+            //     $row[] = '<span class="glyphicon glyphicon-remove" aria-hidden="true"></span>';
 
-            $row[] = $berita->HIT;
+            // $row[] = $berita->HIT;
+            
             $action = '<a href="'.site_url('webmin/berita/edit/'.$berita->ID).'"><button type="button" class="btn btn-info">Edit</button></a>'; 
             
             if($berita->SUBCATEGORY=='26')
@@ -262,13 +263,13 @@ class WebminBerita extends MY_Controller {
             $check_status_publish = $this->library->check_status_publish($this->input->post('id'));
             
             if ($_POST['status'] == '1' && $check_status_publish == '0') { 
-                $this->send_push_notification(
-                    base_url().'assets/images/thumb/'.$filename, 
-                    base_url().'assets/images/view/'.$filename, 
-                    $_POST['title'], 
-                    $_POST['taicing'],
-                    base_url().$this->library->get_url_news($this->input->post('id'), $_POST['title'])
-                );
+                // $this->send_push_notification(
+                //     base_url().'assets/images/thumb/'.$filename, 
+                //     base_url().'assets/images/view/'.$filename, 
+                //     $_POST['title'], 
+                //     $_POST['taicing'],
+                //     base_url().$this->library->get_url_news($this->input->post('id'), $_POST['title'])
+                // );
                 $this->library->edit_status_publish($this->input->post('id'));
             }
             redirect('webmin/berita');
@@ -342,13 +343,13 @@ class WebminBerita extends MY_Controller {
             $resut = $this->M_Berita->insert($data);
 
             if ($_POST['status'] == '1') {
-                $this->send_push_notification(
-                    base_url().'assets/images/thumb/'.$filename, 
-                    base_url().'assets/images/view/'.$filename, 
-                    $_POST['title'], 
-                    $_POST['taicing'],
-                    base_url().$this->library->get_url_news($resut, $_POST['title'])
-                );
+                // $this->send_push_notification(
+                //     base_url().'assets/images/thumb/'.$filename, 
+                //     base_url().'assets/images/view/'.$filename, 
+                //     $_POST['title'], 
+                //     $_POST['taicing'],
+                //     base_url().$this->library->get_url_news($resut, $_POST['title'])
+                // );
                 $this->library->edit_status_publish($resut);
             }
             

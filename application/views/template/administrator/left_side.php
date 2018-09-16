@@ -19,11 +19,11 @@
             <i class="fa fa-th"></i> <span>Berita</span>
             </a>
          </li>
-         <li>
+         <!-- <li>
             <a href="<?=site_url('webmin/fokus')?>">
             <i class="fa fa-th"></i> <span>Fokus</span>
             </a>
-         </li>
+         </li> -->
          <?php 
             if($ddtc['ROLE'] == "superadmin")
             {
@@ -36,52 +36,52 @@
          <?php 
             }
          ?>
-         <li>
+         <!-- <li>
             <a href="<?=site_url('webmin/penulis')?>">
             <i class="fa fa-th"></i> <span>Penulis</span>
             </a>
-         </li>
+         </li> -->
          <li>
             <a href="<?=site_url('webmin/kanal')?>">
-            <i class="fa fa-th"></i> <span>Kanal</span>
+            <i class="fa fa-th"></i> <span>Kategori</span>
             </a>
          </li>
          <li>
             <a href="<?=site_url('webmin/subKanal')?>">
-            <i class="fa fa-th"></i> <span>Sub Kanal</span>
+            <i class="fa fa-th"></i> <span>Sub Kategori</span>
             </a>
          </li>
          <li>
             <a href="<?=site_url('webmin/static')?>">
-            <i class="fa fa-th"></i> <span>Static</span>
+            <i class="fa fa-th"></i> <span>Halaman Statis</span>
             </a>
          </li>
-         <li>
+         <!-- <li>
             <a href="<?=site_url('webmin/indikator')?>">
             <i class="fa fa-th"></i> <span>Indikator</span>
             </a>
-         </li>
-         <li>
+         </li> -->
+         <!-- <li>
             <a href="<?=site_url('webmin/indikator_detail')?>">
             <i class="fa fa-th"></i> <span>Kurs Pajak</span>
             </a>
-         </li>
-         <li>
+         </li> -->
+         <!-- <li>
             <a href="<?=site_url('webmin/banner')?>">
             <i class="fa fa-th"></i> <span>Banner</span>
             </a>
-         </li>
-         <li>
+         </li> -->
+         <!-- <li>
             <a href="<?=site_url('webmin/popup')?>">
             <i class="fa fa-th"></i> <span>Pop Up</span>
             </a>
-         </li>
-         <li>
+         </li> -->
+         <!-- <li>
             <a href="<?=site_url('webmin/quiz')?>">
             <i class="fa fa-th"></i> <span>Quiz</span>
             </a>
-         </li>
-         <li>
+         </li> -->
+        <!--  <li>
             <a href="<?=site_url('webmin/subcriber')?>">
             <i class="fa fa-th"></i> <span>Subscriber</span>
             </a>
@@ -100,7 +100,7 @@
             <a href="<?=site_url('webmin/config')?>">
             <i class="fa fa-th"></i> <span>Config</span>
             </a>
-         </li>
+         </li> -->
 
       </ul>
    </section>

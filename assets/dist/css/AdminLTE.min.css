@@ -22,3 +22,7 @@ html,body{height:100%}.layout-boxed html,.layout-boxed body{height:100%}body{fon
 .u-mrgn-bottom--20 {
 	margin-bottom: 10px;
 }
+
+.login-page, .register-page {
+	background: #355477;
+}

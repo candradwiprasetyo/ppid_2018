@@ -11,7 +11,7 @@
 	$this->load->view('layouts/home_section_3'); 
 
 	// perspektif, analisis, terpopuler
-	$this->load->view('layouts/home_section_4'); 
+	// $this->load->view('layouts/home_section_4'); 
 ?>
 <div class="c-main-desktop">
 <?php

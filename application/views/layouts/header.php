@@ -174,15 +174,19 @@
 	  			<div class="col-sm-6 col-md-6">
 	  				<div class="c-header__title">
 	  					
+	  					<?php 
+	  					$this->load->view('layouts/flag');
+	  					?>
+
 	  					<div class="u-mrgn-bottom--20"></div>
-	  					<div class="title c-main-desktop">(031) 3537537 <i class="fa fa-phone" style="margin-left: 20px;"></i></div>
+	  					<!-- <div class="title c-main-desktop">(031) 3537537 <i class="fa fa-phone" style="margin-left: 20px;"></i></div> -->
 	  					<div class="c-main-desktop">
-		  						<div class="email">
+		  						<!-- <div class="email">
 		  							invest@bpm.jatimprov.go.id <i class="fa fa-envelope" style="margin-left: 20px;"></i>
 		  						</div>
 								<div class="date">
 									<span id="demonew"></span> | <span id="demo"></span>
-								</div>
+								</div> -->
 							
 								<div class="c-header__title__icon--mobile">
 			  					<a href="https://www.facebook.com/ddtcnews/" target="_blank"><div class="c-icon"><img src="<?= base_url() ?>assets/images/facebook-white.png"></div></a>
@@ -445,7 +449,7 @@
 				<?php
 				}
 				?>
-				<div class="item-kontak"><div><span class="fa fa-phone"></span> Kontak</div>
+				<div class="item-kontak"><a href="<?= base_url() ?>page/kontak"><div><span class="fa fa-phone"></span> Kontak</div></a>
 
 					
 			</div> 

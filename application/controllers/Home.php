@@ -36,10 +36,10 @@ class Home extends CI_Controller
         $fokus = $this->News_model->get_focus('', '4');
         $berita_sticky = $this->News_model->get_news('', '1', '', '', '', '', '', '', '', '1');
         $sticky_id = (isset($berita_sticky[0]->ID)) ? $berita_sticky[0]->ID : '';
-        $berita_terbaru_latest = $this->News_model->get_news('', '2', '', '', '', '', '', '', '', '', $sticky_id);
-        $berita_terbaru = $this->News_model->get_news('2', '4', '', '', '', '', '', '', '', '', $sticky_id);
+        $berita_terbaru_latest = $this->News_model->get_news('', '4', '', '', '', '', '', '', '', '', $sticky_id);
+        $berita_terbaru = $this->News_model->get_news('4', '4', '', '', '', '', '', '', '', '', $sticky_id);
         $terpopuler = $this->News_model->get_news_popular_home('', '5');
-        $video = $this->News_model->get_news('', '6', '', '', 28, '');
+        $video = $this->News_model->get_news('', '6', '', '', 26, '');
         $infografis = $this->News_model->get_news('', '4', '', '', 4, '');
         $profil_negara = $this->News_model->get_news('', '4', '', '', 5, '');
         $profil_daerah = $this->News_model->get_news('', '4', '', '', 6, '');
@@ -52,7 +52,7 @@ class Home extends CI_Controller
         $konsultasi_terbaru = $this->News_model->get_news('', '1', '', '', 12, '');
         $kelas_pajak = $this->News_model->get_news('', '8', '', '', 16, '');
         $foto = $this->News_model->get_news('', '3', '', '', 26, '');
-        $foto_slider = $this->News_model->get_foto('', '3', $foto[0]->ID);
+        $foto_slider = $this->News_model->get_foto('', '3', isset($foto[0]->ID));
         $selebriti = $this->News_model->get_news('', '3', '', '', 19, '');
         $humor = $this->News_model->get_news('', '3', '', '', 18, '');
         $kutipan = $this->News_model->get_news('', '3', '', '', 15, '');

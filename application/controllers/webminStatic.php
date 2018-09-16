@@ -43,6 +43,8 @@ class webminStatic extends MY_Controller {
             "CONTENT"  => $_POST['content']
         );
 
+        print_r($data);
+
         $resut = $this->M_Static->update($this->input->post('id'), $data);
         echo 1;
     }

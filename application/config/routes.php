@@ -180,6 +180,15 @@ $route['artikel/(:any)/(:any)'] = 'artikel/detail/$1/$2';
 $route['rss'] = 'rss/index';
 $route['unduh-kajian-akademis-dan-dim-ruu-konsultan-pajak'] = 'other_page/unduh_kajian';
 
+$route['profil'] = 'profil/index';
+$route['profil/(:any)'] = 'profil/sub/$1';
+$route['layanan_informasi'] = 'layanan_informasi/index';
+$route['layanan_informasi/(:any)'] = 'layanan_informasi/sub/$1';
+$route['daftar_informasi'] = 'daftar_informasi/index';
+$route['daftar_informasi/(:any)'] = 'daftar_informasi/sub/$1';
+$route['gallery'] = 'gallery/index';
+$route['gallery/(:any)'] = 'gallery/sub/$1';
+
 $route['berita/(:any)'] = 'berita/sub/$1';
 $route['review/(:any)'] = 'review/sub/$1';
 $route['fokus/(:any)'] = 'fokus/sub/$1';

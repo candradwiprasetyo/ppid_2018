@@ -15,7 +15,7 @@
                </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group" style="display: none">
                <label class="control-label col-sm-2" for="upperdeck">Upperdeck:</label>
                <div class="col-sm-10">
                   <input type="text" class="form-control" name="upperdeck" id="upperdeck" placeholder="Upperdeck" value="<?php echo htmlentities(stripslashes(($data->UPPERDECK))); ?>" maxlength="70">
@@ -46,7 +46,7 @@
                </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group" style="display: none">
                <label class="control-label col-sm-2" for="taicing">Taicing:</label>
                <div class="col-sm-10">
                   <textarea id="taicing" name="taicing" rows="4" cols="80" class="form-control" maxlength="160"><?= strip_tags($data->TAICING) ?></textarea>
@@ -61,7 +61,7 @@
                </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group"  style="display: none">
                <label class="control-label col-sm-2" for="reporter">Reporter:</label>
                <div class="col-sm-6">
                   <select name="reporter" id="reporter" class="form-control">
@@ -80,7 +80,7 @@
                </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group"  style="display: none">
                <label class="control-label col-sm-2" for="redaktur">Redaktur:</label>
                <div class="col-sm-6">
                   <select name="redaktur" id="redaktur" class="form-control">
@@ -99,7 +99,7 @@
                </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group"  style="display: none">
                <label class="control-label col-sm-2" for="keyword">Keyword:</label>
                <div class="col-sm-10">
                   <input type="text" class="form-control" name="keyword" id="keyword" placeholder="Keyword" value="<?=$data->KEYWORD?>">
@@ -134,7 +134,7 @@
                </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group" style="display: none">
                <label class="control-label col-sm-2" for="youtube_url">Youtube URL:</label>
                <div class="col-sm-10">
                   <input type="text" class="form-control" name="youtube_url" id="youtube_url" placeholder="Youtube URL" value="<?=$data->VIDEO?>">
@@ -154,7 +154,7 @@
                </div>
             </div>
 
-            <div class="form-group">
+            <div class="form-group" style="display: none">
                <label class="control-label col-sm-2" for="editor_pick">Editor Pick:</label>
                <div class="col-sm-10">
                   <div class="radio-inline">
@@ -180,7 +180,7 @@
                </div>
             </div>         
 
-            <div class="form-group">
+            <div class="form-group" style="display: none">
                <label class="control-label col-sm-2" for="editor_pick">Sticky</label>
                <div class="col-sm-10">
                   <div class="radio-inline">
@@ -217,8 +217,9 @@
             
             <div class="form-group"> 
                <div class="col-sm-offset-2 col-sm-10">
-                  <button type="submit" class="btn btn-primary" name="saveData" value="submit">Submit</button>
+                  <button type="submit" class="btn btn-primary" name="saveData" value="submit">Save</button>
                   <button type="submit" class="btn btn-success" name="saveData" value="preview">Preview</button>
+                  <a href="javascript: history.back()" class="btn btn-primary">Kembali</a>
                </div>
             </div>
          </form>
