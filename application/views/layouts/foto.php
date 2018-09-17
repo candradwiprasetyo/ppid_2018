@@ -119,7 +119,7 @@
 			<div class="c-detail-article__date">
 				<?php if ($this->library->get_reporter($row->ID)){ echo '<strong>'.$this->library->get_reporter($row->ID).'</strong>'." | "; } ?>
 			<?= $this->library->format_date($row->PUBLISH_TIMESTAMP); ?></div>
-			<div class="c-button-share-mobile">
+			<!-- <div class="c-button-share-mobile">
 				<div class="c-button-share-mobile__item" id="button_share_facebook_mobile"><img src="<?= base_url() ?>assets/images/facebook-white.png"></div>
 				<div class="c-button-share-mobile__item" id="button_share_twitter_mobile"><img src="<?= base_url() ?>assets/images/twitter-white.png"></div>
 				<div class="c-button-share-mobile__item" id="button_share_google_plus_mobile"><img src="<?= base_url() ?>assets/images/google-plus-white.png"></div>
@@ -127,7 +127,7 @@
 				<div class="c-button-share-mobile__item" id="button_share_whatsapp_mobile"><img src="<?= base_url() ?>assets/images/whatsapp-white.png"></div>
 				<div class="c-button-share-mobile__item" id="button_share_line_mobile"><img src="<?= base_url() ?>assets/images/line-white.png"></div>
 				<div class="c-button-share-mobile__item c-button-share-mobile__item--counter" id="button_share_counter_mobile"><?= "10"//$counter_share ?></div>
-			</div>
+			</div> -->
 			
 
 
@@ -207,9 +207,8 @@
 		<div>
 			
 			<!-- Google adsense -->
-			<div class="c-google-ads-top">
+			<!-- <div class="c-google-ads-top">
 			    
-            <!-- 728x90-detailberita-news -->
             <ins class="adsbygoogle"
                 style="display:inline-block;width:100%;height:90px"
                 data-ad-client="ca-pub-1783522418730843"
@@ -218,7 +217,7 @@
             <script>
             (adsbygoogle = window.adsbygoogle || []).push({});
             </script>
-            </div>
+            </div> -->
 			<div class="c-main-title">artikel terkait</div>
 			
 				<?php foreach($artikel_terkait as $key => $row){
@@ -266,7 +265,7 @@
 	      ?>
     	
 
-			<div class="fb-comments" data-width="100%" data-numposts="5"></div>
+			<!-- <div class="fb-comments" data-width="100%" data-numposts="5"></div> -->
 			
 		</div>
 	</div>
@@ -274,61 +273,14 @@
 		
 		
 		<div class="row">
-			<div class="col-md-12"><div class="c-main-title u-mrgn-top--0">Terbaru</div></div>
-			<div class="col-md-12">
-				<?php foreach($terpopuler as $key => $row){
-          ?>
-            <div class="c-main-article">
-          
-              <div class="col-xs-2">
-                <div class="number">
-                  <?= $key + 1 ?>
-                </div>
-              </div>
-              <div class="col-xs-10 u-pad--0">
-                <div class="tag"><?= $row->UPPERDECK; ?></div>
-                <div class="title"><a href="<?= base_url().$this->library->get_url_news($row->ID, $row->TITLE); ?>"><?= $row->TITLE; ?></a></div>
-              </div>
-              <div class="u-clear"></div>
-              
-              
-            </div>
-            <?php
-              if ($key == 0) {
-                ?>
-                <div class="row">
-                  <div class="col-md-12">
-                    <div class="c-main-photo c-main-photo--terpopuler">
-                        <a href="<?= base_url().$this->library->get_url_news($row->ID, $row->TITLE); ?>">
-                        	<img src="<?= $this->library->get_image($row->IMAGE, 2); ?>"></a>
-                      </div>
-                     
-                      <?php
-                      if ($row->SUBCATEGORY != '21' && $row->SUBCATEGORY != '10' && $row->SUBCATEGORY != '12') {
-                      
-                      ?>
-                      <div class="c-border-bottom">
-                          <div class="left"></div>
-                          <div class="right"></div>
-                        </div>
-                        <?php
-                    	}
-                        ?>
-                    </div>
-                 </div>
-                <?php
-              }
-
-            }
-            ?>
-			</div>
+			<?php $this->load->view('layouts/terbaru', $array = array('row' => $row)); ?>	
 		</div>
 
 		
 	</div>
 </div>
 
-<div class="c-button-share">
+<!-- <div class="c-button-share">
 	<div class="c-button-share__item c-button-share__item--counter" id="button_share_counter"><?= "10"//$counter_share ?></div>
 	<div class="c-button-share__item" id="button_share_facebook"><img src="<?= base_url() ?>assets/images/facebook-white.png"></div>
 	<div class="c-button-share__item" id="button_share_twitter"><img src="<?= base_url() ?>assets/images/twitter-white.png"></div>
@@ -337,6 +289,6 @@
 	<div class="c-button-share__item" id="button_share_whatsapp"><img src="<?= base_url() ?>assets/images/whatsapp-white.png"></div>
 	<div class="c-button-share__item" id="button_share_line"><img src="<?= base_url() ?>assets/images/line-white.png"></div>
 
-</div>
+</div> -->
 
 <script type="text/javascript">jssor_1_slider_init();</script>

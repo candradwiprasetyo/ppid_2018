@@ -29,8 +29,8 @@ class Home extends CI_Controller
         $header_banner = $this->News_model->get_banner('', '5', 'header');
         $left_banner = $this->News_model->get_banner('', '1', 'wing-left');
         $right_banner = $this->News_model->get_banner('', '1', 'wing-right');
-        $headline = $this->News_model->get_news('', '5', 'HEADLINE');
-        $headline_sub = $this->News_model->get_news('5', '4', 'HEADLINE');
+        $headline = $this->News_model->get_news('', '3', 'HEADLINE');
+        $headline_sub = $this->News_model->get_news('3', '4', 'HEADLINE');
         $perspektif = $this->News_model->get_news('', '4', '', '', 21);
         $analisis = $this->News_model->get_news('', '20', '', '', 10);
         $fokus = $this->News_model->get_focus('', '4');

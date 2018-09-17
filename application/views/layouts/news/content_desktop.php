@@ -7,7 +7,7 @@
 		if ($counter_read_too%3==0) {
 			if (isset($read_too[$counter_content]->TITLE)) {
 			?>
-				<div class="c-detail-article__read-too" id="c-detail-article__read-too-<?= $counter_content?>">
+				<!-- <div class="c-detail-article__read-too" id="c-detail-article__read-too-<?= $counter_content?>">
 					Baca Juga: 
 					<a href="<?= base_url().$this->library->get_url_news($read_too[$counter_content]->ID, $read_too[$counter_content]->TITLE); ?>">
 					<?php
@@ -16,7 +16,7 @@
 
 					?>
 					</a>
-				</div>
+				</div> -->
 			<?php
 			}
 			$counter_content++;

@@ -1583,7 +1583,7 @@ h1 {
 }
 
 .c-detail-article .c-detail-article__description {
-	color: #222 !important;; 
+	color: #666 !important;; 
 	font-size: 15px !important;;
 	/*font-family: 'Helvetica', 'Arial', sans-serif !important;*/
 	margin-bottom: 20px !important;
@@ -1608,6 +1608,10 @@ h1 {
 
 .c-detail-article .c-detail-article__description ul li{
 	line-height: 26px !important;
+}
+
+.c-detail-article .c-detail-article__description img{
+	width: 100%;
 }
 
 .c-detail-article .c-detail-article__topik {
@@ -2411,7 +2415,7 @@ img:hover {
 	}
 
 	.c-button-share-mobile {
-		display: none;
+		/*display: none;*/
 	}
 
 	.c-button-share {
@@ -2692,7 +2696,7 @@ img:hover {
 
 @media screen and (min-width: 1151px) {
 	.c-button-share-mobile {
-		display: none;
+		/*display: none;*/
 	}
 
 	.c-button-share {

@@ -263,7 +263,7 @@
 									?>
 	                <!-- <li class="dropdown-header">Nav header</li> -->
 	                <li>
-	                	<?php if(($row_sc_header->ID >= 22 && $row_sc_header->ID <= 25)  || ($row_sc_header->ID >= 35 && $row_sc_header->ID <= 36)){ ?>
+	                	<?php if($row_sc_header->ID == 7){ ?>
 										<a href="<?= $row_sc_header->URL; ?>">
 											<?= ucwords($row_sc_header->SUBCATEGORY_NAME); ?>
 										</a>
@@ -370,7 +370,7 @@
 									?>
 
 									<div class="sub-item">
-										<?php if(($row_sc_header->ID >= 22 && $row_sc_header->ID <= 25)  || ($row_sc_header->ID >= 35 && $row_sc_header->ID <= 36)){ ?>
+										<?php if($row_sc_header->ID == 7 ){ ?>
 										<a href="<?= $row_sc_header->URL; ?>">
 											<?= $row_sc_header->SUBCATEGORY_NAME; ?>
 										</a>

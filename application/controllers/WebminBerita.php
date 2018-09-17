@@ -28,7 +28,7 @@ class WebminBerita extends MY_Controller {
             $row[] = $berita->UPPERDECK.' <br/><a href="'.base_url().$this->library->get_url_news($berita->ID, $berita->TITLE).'" target="_blank">'.$berita->TITLE.'</a>'; 
             //$row[] = $berita->UPPERDECK.' <br/><a href="http://news.ddtc.co.id/artikel/'.$berita->ID.'/'.$url_tittle.'">'.$berita->TITLE.'</a>'; 
 
-            $row[] = '<img src="'.site_url("assets/images/thumb/".$berita->IMAGE).'" width="60px" />';
+            $row[] = '<img src="'.site_url("assets/images/thumb/".$berita->IMAGE).'" width="60px" style="max-height: 100px" />';
             $row[] = $berita->CATEGORY_NAME." <br/> -".$berita->SUBCATEGORY_NAME;
             $row[] = isset($temp[0]) ? $date[2].'-'.$date[1].'-'.$date[0].'<br>'.$temp[1] : "";
 

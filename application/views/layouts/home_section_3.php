@@ -28,7 +28,7 @@
                 <div class="date"><?= $this->library->format_date($row->PUBLISH_TIMESTAMP); ?></div>
                 <div class="tag"><?= $row->UPPERDECK; ?></div>
                 <div class="title"><a href="<?= base_url().$this->library->get_url_news($row->ID, $row->TITLE); ?>"><?= $row->TITLE; ?></a></div>
-                <div class="desc"><?= substr($row->CONTENT, 0, 100)."..."; ?></div>
+                <!-- <div class="desc"><?= substr($row->CONTENT, 0, 100)."..."; ?></div> -->
               </div>
               <div class="u-clear"></div>
             </div>
@@ -56,7 +56,7 @@
                 <div class="date"><?= $this->library->format_date($row->PUBLISH_TIMESTAMP); ?></div>
                 <div class="tag"><?= $row->UPPERDECK; ?></div>
                 <div class="title"><a href="<?= base_url().$this->library->get_url_news($row->ID, $row->TITLE); ?>"><?= $row->TITLE; ?></a></div>
-                <div class="desc"><?= substr($row->CONTENT, 0, 100)."..."; ?></div>
+                <!-- <div class="desc"><?= substr($row->CONTENT, 0, 100)."..."; ?></div> -->
               </div>
               <div class="u-clear"></div>
             </div>

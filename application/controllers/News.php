@@ -94,17 +94,17 @@ class News extends CI_Controller
                 'counter_share' => $counter_share,
                 'get_data_readcrumb' => $get_data_readcrumb,
             ));
-          } else if ($news_detail[0]->SUBCATEGORY == '4') {
+          // } else if ($news_detail[0]->SUBCATEGORY == '4') {
 
-            $this->load->view('layouts/infografis', $array = array(
-                'news_detail' => $news_detail,
-                'terpopuler' => $terpopuler,
-                'artikel_terkait' => $artikel_terkait,
-                'editorpick' => $editorpick,
-                'counter_share' => $counter_share,
-                'get_data_readcrumb' => $get_data_readcrumb,
-                'berita_terbaru' => $berita_terbaru,
-            ));
+          //   $this->load->view('layouts/infografis', $array = array(
+          //       'news_detail' => $news_detail,
+          //       'terpopuler' => $terpopuler,
+          //       'artikel_terkait' => $artikel_terkait,
+          //       'editorpick' => $editorpick,
+          //       'counter_share' => $counter_share,
+          //       'get_data_readcrumb' => $get_data_readcrumb,
+          //       'berita_terbaru' => $berita_terbaru,
+          //   ));
           } else {
             $this->load->view('layouts/news', $array = array(
                 'news_detail' => $news_detail,
