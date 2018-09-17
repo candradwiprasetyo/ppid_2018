@@ -18,7 +18,8 @@ class News_model extends CI_Model
         $this->db->select('* , TIMEDIFF(NOW(),PUBLISH_TIMESTAMP) AS selisih');
         $this->db->from('tbl_article');
         if (!$preview) {
-            $this->db->where('STATUS=1 and PUBLISH_TIMESTAMP <= Now()');
+            // $this->db->where('STATUS=1 and PUBLISH_TIMESTAMP <= Now()');
+            $this->db->where('STATUS=1');
         }
         if ($type) {
             $this->db->where("TIPE='".$type."'");

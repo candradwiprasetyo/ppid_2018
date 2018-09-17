@@ -11,7 +11,7 @@ class Home extends CI_Controller
     {
         parent::__construct();
         $this->load->model('News_model');
-        $this->load->model('Engine_model');
+        // $this->load->model('Engine_model');
         $this->load->library('library');
         $this->load->library('user_agent');
     }
@@ -60,13 +60,13 @@ class Home extends CI_Controller
         $kamus = $this->News_model->get_news('', '3', '', '', 14, '');
         $agenda = $this->News_model->get_news('', '3', '', '', 17, '');
         $kampus = $this->News_model->get_news('', '3', '', '', 20, '');
-        $peraturan_pajak = $this->Engine_model->get_peraturan_pajak('', '1');
-        $putusan_pengadilan = $this->Engine_model->get_putusan_pengadilan('', '1');
-        $p3b = $this->Engine_model->get_p3b('', '1');
-        $mahkamah_agung = $this->Engine_model->get_mahkamah_agung('', '1');
-        $peraturan_pajak_terbanyak = $this->Engine_model->get_peraturan_pajak_terbanyak('', '3');
-        $peraturan_pajak_terpopuler = $this->Engine_model->get_peraturan_pajak_terpopuler('', '3');
-        $peraturan_pajak_terbaru = $this->Engine_model->get_peraturan_pajak_terbaru('', '3');
+        // $peraturan_pajak = $this->Engine_model->get_peraturan_pajak('', '1');
+        // $putusan_pengadilan = $this->Engine_model->get_putusan_pengadilan('', '1');
+        // $p3b = $this->Engine_model->get_p3b('', '1');
+        // $mahkamah_agung = $this->Engine_model->get_mahkamah_agung('', '1');
+        // $peraturan_pajak_terbanyak = $this->Engine_model->get_peraturan_pajak_terbanyak('', '3');
+        // $peraturan_pajak_terpopuler = $this->Engine_model->get_peraturan_pajak_terpopuler('', '3');
+        // $peraturan_pajak_terbaru = $this->Engine_model->get_peraturan_pajak_terbaru('', '3');
         $kuis_banner = $this->News_model->get_banner('', '1', 'section-0', '');
         $tax_engine_banner = $this->News_model->get_banner('', '1', 'section-1', '');
         $final_research_banner = $this->News_model->get_banner('', '1', 'section-2', '');
@@ -123,19 +123,19 @@ class Home extends CI_Controller
             'kamus' => $kamus,
             'agenda' => $agenda,
             'kampus' => $kampus,
-            'peraturan_pajak' => $peraturan_pajak,
-            'putusan_pengadilan' => $putusan_pengadilan,
-            'p3b' => $p3b,
-            'mahkamah_agung' => $mahkamah_agung,
+            // 'peraturan_pajak' => $peraturan_pajak,
+            // 'putusan_pengadilan' => $putusan_pengadilan,
+            // 'p3b' => $p3b,
+            // 'mahkamah_agung' => $mahkamah_agung,
             'tax_engine_banner' => $tax_engine_banner,
             'final_research_banner' => $final_research_banner,
             'academy_banner' => $academy_banner,
             'library_banner' => $library_banner,
             'inside_tax_banner' => $inside_tax_banner,
             'working_paper_banner' => $working_paper_banner,
-            'peraturan_pajak_terbanyak' => $peraturan_pajak_terbanyak,
-            'peraturan_pajak_terbaru' => $peraturan_pajak_terbaru,
-            'peraturan_pajak_terpopuler' => $peraturan_pajak_terpopuler,
+            // 'peraturan_pajak_terbanyak' => $peraturan_pajak_terbanyak,
+            // 'peraturan_pajak_terbaru' => $peraturan_pajak_terbaru,
+            // 'peraturan_pajak_terpopuler' => $peraturan_pajak_terpopuler,
             'mobile_banner_1' => $mobile_banner_1,
             'mobile_banner_2' => $mobile_banner_2,
             'popup' => $popup,
